@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHASKARA</title>
+</head>
+
+<style>
+    h1, h2, h3 { font-family: 'Pacifico' ,cursive; font-weight: bolder ; font-size: 45px;}
+    p {font-family: 'Pacifico' ,cursive; font-weight: bolder ; font-size: 15px;}
+</style>
+
+<body>
+    <header class="bg-light header">
+        <section>
+            <span class="span-1">Aprenda</span>
+            <span class="span-2">Na Prática</span>
+            
+            <section class="links">
+                <a href="index.html">Inicio</a>
+                <a href="Polo.html">Escola Polo</a>
+                <a href="Professor.html">Professor</a>
+                <a href="Arquivos.html">Arquivos</a>
+                <a href="Exemplos.html">Jogos</a>
+            </section>
+        </section>
+    </header>
+    <h1>Encontre o valor de DELTA: </h1>
+    <button onclick="bhaskara()">Calcular valor de Delta!</button>
+
+    <section id="situacao">
+        <p></p>
+    </section>
+
+    <script>
+        var jogahtml = window.document.getElementById('situacao')
+
+        function bhaskara() {
+            var a = Number(window.prompt('Qual valor de a: '))
+            var b = Number(window.prompt('Qual valor de b: '))
+            var c = Number(window.prompt('Qual valor de c: '))
+           
+            resultdelta =(b*b-4*a*c) 
+        
+            jogahtml.innerHTML = `<p>A equação solicitada foi <mark>${a}x²+${b}x+${c}</mark> </p>`
+            jogahtml.innerHTML += `<p> O valor de Delta será calculado da seguinte forma: <mark> Δ=${b}²-4*${a}*${c} </mark></p>`
+            jogahtml.innerHTML += `<p> O valor de Δ será de: <mark> ${resultdelta}</mark></p>`
+            jogahtml.innerHTML += `<p> Valor de a=${a} | valor de b=${b} | valor de c=${c} </p>`  
+        }
+    </script>
+</body>
+
+</html>
