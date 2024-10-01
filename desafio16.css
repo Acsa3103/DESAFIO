@@ -4,7 +4,7 @@ body{
     background: linear-gradient(90deg,#9733da 0%,#b4daec 100%);
     display: flex;
     justify-content: center;
-    align-itens: center
+    align-items: center
 }
 
 .tela{
