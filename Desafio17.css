@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.game-box {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
