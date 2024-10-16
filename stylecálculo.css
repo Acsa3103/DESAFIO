@@ -1,7 +1,7 @@
 
 
         body {
-            background: linear-gradient(to bottom right, green, yellow);
+            background: linear-gradient(to bottom right, rgb(0, 34, 128), rgba(194, 44, 224, 0.836));
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,7 +28,7 @@
         }
 
         button {
-            background-color: #4CAF50; /* Verde */
+            background-color: #4c82af; /* Verde */
             color: white;
             padding: 10px 20px;
             border: none;
