@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troca de Imagem com Degradê</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, orange, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid white;
+            background: linear-gradient(to bottom, orange, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container" onclick="changeImage()">
+        <img src="Modelo 2.png" alt="Imagem">
+    </div>
+
+    <script>
+        const images = ['Mario.jpg', 'Mario2.jpg', 'morris.webp'];
+        let currentImageIndex = 0;
+
+        function changeImage() {
+            const image = document.querySelector('img');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            image.src = images[currentImageIndex];
+        }
+    </script>
+</body>
+
+</html>
