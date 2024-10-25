@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Criada pela IA</title>
+    <link rel="stylesheet" href="bandeiras.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Página Criada pela IA</h1>
+        <div class="gallery">
+            <div class="thumbnail-container">
+                <img src="bandeira1.jpg" alt="Bandeira 1" class="thumbnail" onclick="ampliarImagem(this)">
+                <img src="bandeira2.jpg" alt="Bandeira 2" class="thumbnail" onclick="ampliarImagem(this)">
+                <img src="bandeira3.jpg" alt="Bandeira 3" class="thumbnail" onclick="ampliarImagem(this)">
+            </div>
+            <div class="main-image">
+                <img id="ampliada" src="bandeira1.jpg">
+            </div>
+        </div>
+        <div class="hino-container">
+            <h1>
+                Ouviram do Ipiranga as margens plácidas
+                De um povo heróico o brado retumbante,
+                E o sol da Liberdade, em raios fúlgidos,
+                Brilhou no céu da Pátria nesse instante.
+                Se o penhor dessa igualdade
+                Conseguimos conquistar com braço forte,
+                Em teu seio, ó Liberdade,
+                Desafia o nosso peito a própria morte!
+                Ó Pátria amada, Idolatrada, Salve! Salve!
+                Brasil, um sonho intenso, um raio vívido
+                De amor e de esperança à terra desce,
+                Se em teu formoso céu, risonho e límpido,
+                A imagem do Cruzeiro resplandece.
+                Gigante pela própria natureza,
+                És belo, és forte, impávido colosso,
+                E o teu futuro espelha essa grandeza
+                Terra adorada, Entre outras mil,
+                És tu, Brasil, Ó Pátria amada!
+                Dos filhos deste solo és mãe gentil,
+                Pátria amada, Brasil!
+                Deitado eternamente em berço esplêndido,
+                Ao som do mar e à luz do céu profundo,
+                Fulguras, ó Brasil, florão da América,
+                Iluminado ao sol do Novo Mundo!
+                Do que a terra mais garrida
+                Teus risonhos, lindos campos têm mais flores;
+                "Nossos bosques têm mais vida",
+                "Nossa vida" no teu seio "mais amores".
+                Ó Pátria amada, Idolatrada, Salve! Salve!
+                Brasil, de amor eterno seja símbolo
+                O lábaro que ostentas estrelado,
+                E diga o verde-louro desta flâmula
+                Paz no futuro e glória no passado.
+                Mas, se ergues da justiça a clava forte,
+                Verás que um filho teu não foge à luta,
+                Nem teme, quem te adora, a própria morte!
+                Terra adorada Entre outras mil,
+                És tu, Brasil, Ó Pátria amada!
+                Dos filhos deste solo és mãe gentil,
+                Pátria amada, Brasil!
+            </h1>
+            
+        </div>
+        </div>
+    
+    <footer>
+        <p>© 2024 - Todos os direitos reservados</p>
+        <p id="data">24/10/2024</p>
+    </footer>
+
+ <script>
+    function ampliarImagem(imagem) {
+        var imagemAmpliada = document.getElementById('ampliada');
+        imagemAmpliada.src = imagem.src;
+    }
+
+    // Função para exibir a data atual
+    document.getElementById('data').innerHTML = new Date().toLocaleDateString('pt-BR');
+
+</script>
+
+</body>
+</html>
